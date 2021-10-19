@@ -1,0 +1,84 @@
+!$THEME = "strata-dark"
+
+!ifndef $MODE
+  !$FONT_NAME = "Menlo"
+!endif
+
+!$BGCOLOR = "#0D0A17"
+!$TXTCOLOR = "#C791FF"
+!$ARROWCOLOR = "#9AF0FF"
+!$ACTORCOLOR = "#00CFC7"
+!$ACTORCOLOROL = "#006965"
+!$BOXCOLOR = "#9AF0FF"
+
+!ifndef $FONT_NAME
+  !$FONT_NAME = "Menlo"
+!endif
+
+!ifndef $FONT_NAME_MONOSPACED
+  !$FONT_NAME_MONOSPACED = "Courier"
+!endif
+
+<style>
+  root {
+    BackgroundColor $BGCOLOR
+    FontColor $TXTCOLOR
+    FontName $FONT_NAME
+    HyperLinkColor $BGCOLOR
+    LineColor $LINECOLOR
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor $LINECOLOR
+skinparam BackgroundColor $BGCOLOR
+skinparam DefaultFontName $FONT_NAME
+skinparam DefaultMonospacedFontName $FONT_NAME_MONOSPACED
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam Shadowing false
+skinparam UseBetaStyle true
+skinparam NoteBackgroundColor $BOXCOLOR
+skinparam NoteBorderColor $BOXCOLOR
+skinparam NoteFontColor $BGCOLOR
+
+skinparam sequence {
+    ArrowColor $LINECOLOR
+
+    DividerBackgroundColor $BOXCOLOR
+
+    LifeLineBorderColor $LINECOLOR
+    LifeLineBackgroundColor $LINECOLOR
+
+    ParticipantBorderColor $ACTORCOLOROL
+    ParticipantBackgroundColor $ACTORCOLOR
+    ParticipantFontSize 17
+    ParticipantFontColor $BGCOLOR
+
+    ActorBorderColor $ACTORCOLOR
+    ActorBackgroundColor $BGCOLOR
+    ActorFontColor $TXTCOLOR
+    ActorFontSize 17
+
+    GroupBackgroundColor $BOXCOLOR
+    GroupBorderColor $TXTCOLOR
+
+    ReferenceBackgroundColor $BOXCOLOR
+}
