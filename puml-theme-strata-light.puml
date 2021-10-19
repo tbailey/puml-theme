@@ -1,0 +1,84 @@
+!$THEME = "strata-dark"
+
+!ifndef $MODE
+  !$FONT_NAME = "Menlo"
+!endif
+
+!$GREEN = "#00CFC7"
+!$GREENOL = "#006965"
+!$PURPLE = "#7762F9"
+!$GREY = "#8D99AE"
+!$TXTCOLOR = "#272A41"
+!$WHITE = "#FFFFFF"
+
+!ifndef $FONT_NAME
+  !$FONT_NAME = "Menlo"
+!endif
+
+!ifndef $FONT_NAME_MONOSPACED
+  !$FONT_NAME_MONOSPACED = "Courier"
+!endif
+
+<style>
+  root {
+    BackgroundColor $WHITE
+    FontColor $TXTCOLOR
+    FontName $FONT_NAME
+    HyperLinkColor $WHITE
+    LineColor $PURPLE
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor $PURPLE
+skinparam BackgroundColor $WHITE
+skinparam DefaultFontName $FONT_NAME
+skinparam DefaultMonospacedFontName $FONT_NAME_MONOSPACED
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam Shadowing false
+skinparam UseBetaStyle true
+skinparam NoteBackgroundColor $GREY
+skinparam NoteBorderColor $GREY
+skinparam NoteFontColor $WHITE
+
+skinparam sequence {
+    ArrowColor $PURPLE
+
+    DividerBackgroundColor $GREY
+
+    LifeLineBorderColor $PURPLE
+    LifeLineBackgroundColor $PURPLE
+
+    ParticipantBorderColor $GREENOL
+    ParticipantBackgroundColor $GREEN
+    ParticipantFontSize 17
+    ParticipantFontColor $WHITE
+
+    ActorBorderColor $GREEN
+    ActorBackgroundColor $WHITE
+    ActorFontColor $TXTCOLOR
+    ActorFontSize 17
+
+    GroupBackgroundColor $GREY
+    GroupBorderColor $TXTCOLOR
+
+    ReferenceBackgroundColor $GREY
+}
