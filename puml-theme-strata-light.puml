@@ -1,15 +1,15 @@
-!$THEME = "strata-light"
+!$THEME = "strata-dark"
 
 !ifndef $MODE
   !$FONT_NAME = "Menlo"
 !endif
 
-!$GREEN = "#00CFC7"
-!$GREENOL = "#006965"
-!$PURPLE = "#7762F9"
-!$GREY = "#8D99AE"
+!BGCOLOR = "#FFFFFF"
 !$TXTCOLOR = "#272A41"
-!$WHITE = "#FFFFFF"
+!$ACTORCOLOR = "#00CFC7"
+!$ACTORCOLOROL = "#006965"
+!$LINECOLOR = "#7762F9"
+!$BOXCOLOR = "#8D99AE"
 
 !ifndef $FONT_NAME
   !$FONT_NAME = "Menlo"
@@ -21,11 +21,11 @@
 
 <style>
   root {
-    BackgroundColor $WHITE
+    BackgroundColor $BGCOLOR
     FontColor $TXTCOLOR
     FontName $FONT_NAME
-    HyperLinkColor $WHITE
-    LineColor $PURPLE
+    HyperLinkColor $BGCOLOR
+    LineColor $LINECOLOR
     LineThickness 1
     Margin 5
   }
@@ -47,38 +47,38 @@
   }
 </style>
 
-skinparam ArrowLollipopColor $PURPLE
-skinparam BackgroundColor $WHITE
+skinparam ArrowLollipopColor $LINECOLOR
+skinparam BackgroundColor $BGCOLOR
 skinparam DefaultFontName $FONT_NAME
 skinparam DefaultMonospacedFontName $FONT_NAME_MONOSPACED
 skinparam LifelineStrategy nosolid
 skinparam ParticipantPadding 10
 skinparam Shadowing false
 skinparam UseBetaStyle true
-skinparam NoteBackgroundColor $GREY
-skinparam NoteBorderColor $GREY
-skinparam NoteFontColor $WHITE
+skinparam NoteBackgroundColor $BOXCOLOR
+skinparam NoteBorderColor $BOXCOLOR
+skinparam NoteFontColor $BGCOLOR
 
 skinparam sequence {
-    ArrowColor $PURPLE
+    ArrowColor $LINECOLOR
 
-    DividerBackgroundColor $GREY
+    DividerBackgroundColor $BOXCOLOR
 
-    LifeLineBorderColor $PURPLE
-    LifeLineBackgroundColor $PURPLE
+    LifeLineBorderColor $LINECOLOR
+    LifeLineBackgroundColor $LINECOLOR
 
-    ParticipantBorderColor $GREENOL
-    ParticipantBackgroundColor $GREEN
+    ParticipantBorderColor $ACTORCOLOROL
+    ParticipantBackgroundColor $ACTORCOLOR
     ParticipantFontSize 17
-    ParticipantFontColor $WHITE
+    ParticipantFontColor $BGCOLOR
 
-    ActorBorderColor $GREEN
-    ActorBackgroundColor $WHITE
+    ActorBorderColor $ACTORCOLOR
+    ActorBackgroundColor $BGCOLOR
     ActorFontColor $TXTCOLOR
     ActorFontSize 17
 
-    GroupBackgroundColor $GREY
+    GroupBackgroundColor $BOXCOLOR
     GroupBorderColor $TXTCOLOR
 
-    ReferenceBackgroundColor $GREY
+    ReferenceBackgroundColor $BOXCOLOR
 }
