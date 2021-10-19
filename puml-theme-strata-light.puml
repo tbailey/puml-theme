@@ -1,4 +1,4 @@
-!$THEME = "strata-dark"
+!$THEME = "strata-light"
 
 !ifndef $MODE
   !$FONT_NAME = "Menlo"
